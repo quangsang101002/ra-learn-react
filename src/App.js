@@ -1,12 +1,11 @@
 import React from 'react';
+import MyComponent from './myComponent';
 
 class App extends React.Component {
   render() {
-    let dateTime = new Date();
     return (
-      <div>
-        <h2>Đồng Hồ</h2>
-        {dateTime.toLocaleTimeString()}
+      <div className="App">
+        <MyComponent studentName="Quang"></MyComponent>
       </div>
     );
   }
