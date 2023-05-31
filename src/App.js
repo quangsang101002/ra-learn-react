@@ -1,13 +1,12 @@
 import React from 'react';
-import MyComponent from './myComponent';
 
 class App extends React.Component {
+  constructor() {
+    super();
+    this.state = { studentName: 'Quang' };
+  }
   render() {
-    return (
-      <div className="App">
-        <MyComponent studentName="Quang"></MyComponent>
-      </div>
-    );
+    return <div className="App">studentName: {this.state.studentName}</div>;
   }
 }
 export default App;
